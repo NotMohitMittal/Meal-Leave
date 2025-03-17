@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch-Box Leave</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">    <!--Logo on the title of web-page.-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main-container">
+        <div id="left-side-container">
+            <div id="reason-image">
+                <img src="images/reason.png" alt="Reasons" srcset="">
+            </div>
+
+            <div id="reason-content"></div>
+        </div>
+
+        <div id="right-side-container">
+            <div id="project-title-container">
+                Lunch-Box Leave Maintainance
+            </div>
+            <div id="entry-box">
+                <div id="entry-box-date-content">
+                    <!-- <label for="calender"> Date </label> -->
+                    <input type="date" name="date" id="calender"> <br>
+                    
+                </div>
+                
+                <div id="time-stamp">
+                    <div id="Morning">
+                        <label for="radio-morning"> Morning </label>
+                        <input type="radio" name="time-of-day" class="morning-or-evening" id="radio-morning" value="Morning">
+                    </div>
+                    
+                    <div id="Evening">
+                        <label for="radio-evening"> Evening </label>
+                        <input type="radio" name="time-of-day" class="morning-or-evening" id="radio-evening" value="Evening">
+                    </div>
+                </div>
+                
+                <div class="leave-buttons">
+                    <button id="leave-submit" class="button"> SUBMIT </button>
+                    <button id="leave-clear" class="button"> CLEAR </button>
+                </div> 
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

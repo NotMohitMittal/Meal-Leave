@@ -42,6 +42,7 @@ body {
     border-radius: 8px;
     background: rgba(0, 0, 0, 0.3); /* Black */
     color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -84,7 +85,11 @@ body {
 
 #reason-image img {
     width: 70%;
+    filter: drop-shadow(0 0 10px rgb(17, 118, 200)) 
+    drop-shadow(0 0 20px rgb(20, 166, 207)) 
+    drop-shadow(0 0 30px rgb(6, 166, 202));
 }
+
 
 
 #reason-content {
@@ -112,6 +117,7 @@ body {
 
 #project-title-container {
     background-color: rgba(28, 30, 29);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     color: cyan;
     width: 60%;
     height: 8%;
@@ -130,6 +136,7 @@ body {
 
 #entry-box {
     background: rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
     color: white;
     height: 50%;
     width: 60%;
@@ -156,12 +163,14 @@ body {
 
 
 #calender {
+    background: linear-gradient(135deg, #87CEEB, #E6E6FA);
     height: 40px;
     width: 60%;
     padding: 10px;
     border: 2px, solid, black;
     border-radius: 10px;
     text-align: center;
+    box-shadow: 5px 5px 15px rgba(18, 40, 47, 0.5);
 }
 
 
@@ -169,11 +178,17 @@ body {
     display: flex;
     align-items: center;
     justify-content:space-evenly;
-    background-color: rgb(238, 229, 229, 0.5);
-    height: 7%;
-    width: 35%;
+    background-color: rgba(6, 210, 246, 0.2);
+    height: 10%;
+    width: 45%;
     flex-wrap: wrap;
     border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#time-stamp:hover {
+    background-color: rgb(238, 229, 229, 0.3);
 }
 
 
@@ -189,12 +204,24 @@ body {
 }
 
 .button {
-    height: 50px;
-    width: 100px;
+    background: linear-gradient(135deg, rgb(201, 232, 207), skyBlue);
+    color: rgb(0, 0, 0);
+    height: 40px;
+    width: 130px;
     margin: 20px;
-    border: 3px solid cyan;
-    border-radius: 10px;
+    border: 3px solid rgb(58, 205, 205);
+    border-radius: 7px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); 
+
+
 }
+
+.button:hover {
+    transform: scale(1.1);
+
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

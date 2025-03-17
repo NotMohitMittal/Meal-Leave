@@ -154,7 +154,7 @@ const initializeApp = () => {
 
 // Submit button click handler
 submitButtonElement.addEventListener("click", function() {
-    const currentDate = calenderElement.value;
+    const currentDate = (calenderElement.value).split("-").reverse().join("-");
     const selectedTimeOfDay = document.querySelector("input[name='time-of-day']:checked")?.value;
     const reason = document.querySelector("input[name='leave-reason']:checked")?.value;
     

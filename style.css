@@ -53,12 +53,14 @@ body {
 
 .leave-delete-button {
     margin-right: 3px;
-    background-color: rgb(185, 26, 26);
+    background-color: rgb(163, 223, 68);
+    color: black;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     text-align: center;
     font-weight: 700;
+    box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
